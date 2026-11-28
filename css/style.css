@@ -211,10 +211,10 @@
 }
 
 #carouselId .carousel-indicators li.active {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
-    border-right: 15px solid var(--bs-primary);
-    border-left: 15px solid var(--bs-primary);
+    background: #254460;
+    border-color: #254460;
+    border-right: 15px solid #254460;
+    border-left: 15px solid #254460;
 }
 /*** Carousel End ***/
 
@@ -1086,5 +1086,210 @@ body {
         inset: 4px;
         width: calc(100% - 8px);
         height: calc(100% - 8px);
+    }
+}
+
+
+
+
+
+/* =================================
+   CAROUSEL - MASSAGE BY ESTHER
+================================= */
+
+/* SUBTÍTULO */
+.carousel-header .carousel-subtitle {
+    color: #55cadb !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* TÍTULO PRINCIPAL */
+.carousel-header .carousel-title {
+    color: #254460 !important;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+/* DESCRIPCIÓN */
+.carousel-header .carousel-description {
+    color: #254460 !important;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* BOTÓN SERVICIOS */
+.carousel-header .carousel-button {
+    background-color: #254460;
+    color: #ffffff;
+    border: 2px solid #254460;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER */
+.carousel-header .carousel-button:hover {
+    background-color: #55cadb;
+    border-color: #55cadb;
+    color: #254460;
+    transform: translateY(-3px);
+}
+
+/* INDICADORES */
+.carousel-header .carousel-indicators li {
+    background-color: #93ba9d;
+    opacity: 0.6;
+}
+
+.carousel-header .carousel-indicators .active {
+    background-color: #55cadb;
+    opacity: 1;
+}
+
+/* FLECHAS */
+.carousel-header .carousel-control-prev-icon,
+.carousel-header .carousel-control-next-icon {
+    background-color: #254460;
+    border-radius: 50%;
+    padding: 22px;
+    background-size: 50%;
+}
+
+/* TRANSICIÓN DEL BOTÓN */
+.carousel-header .carousel-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(85, 202, 219, 0.3);
+}
+
+/* AJUSTES PARA MÓVILES */
+@media (max-width: 768px) {
+
+    .carousel-header .carousel-title {
+        font-size: 38px;
+    }
+
+    .carousel-header .carousel-description {
+        font-size: 16px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .carousel-header .carousel-subtitle {
+        font-size: 13px;
+    }
+
+}
+/* GALERÍA */
+.gallery-section {
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+
+.gallery-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.gallery-subtitle {
+    display: inline-block;
+    color: #55cadb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.gallery-title {
+    color: #254460;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.gallery-title em {
+    color: #55cadb;
+    font-style: normal;
+}
+
+.gallery-description {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* PESTAÑAS */
+.gallery-tabs {
+    margin-bottom: 40px;
+}
+
+.gallery-tabs .nav {
+    gap: 10px;
+}
+
+.gallery-tabs .nav-link {
+    color: #254460;
+    background-color: #f5f8fa;
+    border: 1px solid #e5edf0;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.gallery-tabs .nav-link:hover {
+    background-color: #55cadb;
+    color: #ffffff;
+    border-color: #55cadb;
+}
+
+.gallery-tabs .nav-link.active {
+    background-color: #254460;
+    color: #ffffff;
+    border-color: #254460;
+}
+
+/* IMÁGENES */
+.gallery-content .gallery-item {
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    background-color: #f5f8fa;
+}
+
+.gallery-content .gallery-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-content .gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 65px 0;
+    }
+
+    .gallery-title {
+        font-size: 34px;
+    }
+
+    .gallery-tabs .nav {
+        gap: 8px;
+    }
+
+    .gallery-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .gallery-content .gallery-item img {
+        height: 220px;
     }
 }
