@@ -115,8 +115,8 @@
                                 <h1 class="display-1 text-capitalize text-dark mb-3">Massage Treatment</h1>
                                 <p class="mx-md-5 fs-4 px-4 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Ver servicios</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                    <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4"  href="#servicios">Ver servicios</a>
+                                    <!-- <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"  href="#servicios">Book Now</a> -->
                                 </div>
                             </div>
                         </div>
@@ -129,8 +129,8 @@
                                 <h1 class="display-1 text-capitalize text-dark mb-3">Facial Treatment</h1>
                                 <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                           <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Ver servicios</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                           <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4"  href="#servicios">Ver servicios</a>
+                                    <!-- <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"  href="#servicios">Book Now</a> -->
                                 </div>
                             </div>
                         </div>
@@ -143,8 +143,8 @@
                                 <h1 class="display-1 text-capitalize text-dark">Cellulite Treatment</h1>
                                 <p class="mx-md-5 fs-4 px-5 mb-5 text-dark">Lorem rebum magna dolore amet lorem eirmod magna erat diam stet. Sadips duo stet amet amet ndiam elitr ipsum</p>
                                 <div class="d-flex align-items-center justify-content-center">
-                                                                       <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4" href="#">Ver servicios</a>
-                                    <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5" href="#">Book Now</a>
+                                                                       <a class="btn btn-light btn-light-outline-0 rounded-pill py-3 px-5 me-4"  href="#servicios">Ver servicios</a>
+                                    <!-- <a class="btn btn-primary btn-primary-outline-0 rounded-pill py-3 px-5"  href="#servicios">Book Now</a> -->
                                 </div>
                             </div>
                         </div>
@@ -164,7 +164,7 @@
 
 
         <!-- Services Start -->
-        <div class="container-fluid services py-5">
+        <div id="servicios" class="container-fluid services py-5">
             <div class="container py-5">
                 <div class="mx-auto text-center mb-5" style="max-width: 800px;">
                     <p class="fs-4 text-uppercase text-center text-primary">Our Service</p>
@@ -399,210 +399,6 @@
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
 
-<style>
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'DM Sans', sans-serif;
-    background: #ffffff;
-}
-
-.beneficios {
-    position: relative;
-    background: #f9f8f4;
-    padding: 100px 7%;
-    overflow: hidden;
-}
-
-.contenedor {
-    max-width: 1250px;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 80px;
-    position: relative;
-    z-index: 2;
-}
-
-/* TEXTO */
-
-.etiqueta {
-    color: #b69a70;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 3px;
-    margin-bottom: 25px;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.etiqueta::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    background: #b69a70;
-}
-
-.contenido h2 {
-    font-family: 'Playfair Display', serif;
-    font-size: clamp(34px, 4vw, 49px);
-    line-height: 1.05;
-    font-weight: 600;
-    color: #626357;
-    margin-bottom: 20px;
-}
-
-.contenido h2 span {
-    color: #85866d;
-    font-style: italic;
-    font-weight: 500;
-}
-
-.descripcion {
-    color: #73736c;
-    font-size: 15px;
-    line-height: 1.7;
-    max-width: 540px;
-    margin-bottom: 55px;
-}
-
-/* LISTA DE BENEFICIOS */
-
-.lista-beneficios {
-    display: flex;
-    flex-direction: column;
-    gap: 42px;
-}
-
-.beneficio {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;
-}
-
-.icono {
-    min-width: 48px;
-    height: 48px;
-    background: #e9eee9;
-    border-radius: 13px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 21px;
-}
-
-.beneficio:nth-child(2) .icono {
-    background: #f0ebdf;
-}
-
-.beneficio:nth-child(3) .icono {
-    background: #eaeae5;
-}
-
-.beneficio:nth-child(4) .icono {
-    background: #f2ede3;
-}
-
-.beneficio h3 {
-    font-family: 'Playfair Display', serif;
-    color: #66675d;
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 6px;
-}
-
-.beneficio p {
-    font-size: 14px;
-    line-height: 1.55;
-    color: #74746d;
-}
-
-/* IMAGEN */
-
-.imagen-contenedor {
-    position: relative;
-    padding: 10px;
-}
-
-.imagen-contenedor img {
-    width: 100%;
-    height: 640px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 16px;
-    display: block;
-    position: relative;
-    z-index: 2;
-}
-
-/* DETALLE DECORATIVO */
-
-.imagen-contenedor::before {
-    content: "";
-    position: absolute;
-    width: 140px;
-    height: 150px;
-    border: 1px solid #e6e5dc;
-    border-radius: 18px;
-    bottom: -15px;
-    left: -15px;
-    z-index: 1;
-}
-
-
-/* RESPONSIVE */
-
-@media (max-width: 900px) {
-    .contenedor {
-        grid-template-columns: 1fr;
-        gap: 45px;
-    }
-
-    .imagen-contenedor {
-        max-width: 600px;
-        width: 100%;
-        margin: auto;
-    }
-
-    .imagen-contenedor img {
-        height: 500px;
-    }
-}
-
-@media (max-width: 550px) {
-    .beneficios {
-        padding: 65px 22px;
-    }
-
-    .contenido h2 {
-        font-size: 36px;
-    }
-
-    .descripcion {
-        margin-bottom: 38px;
-    }
-
-    .lista-beneficios {
-        gap: 30px;
-    }
-
-    .imagen-contenedor img {
-        height: 390px;
-    }
-
-    .borde-decorativo {
-        inset: 4px;
-        width: calc(100% - 8px);
-        height: calc(100% - 8px);
-    }
-}
-</style>
 </head>
 
 <body>
@@ -744,89 +540,49 @@ body {
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-1.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-1.jpg" data-lightbox="Gallery-1" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-2.jpg" data-lightbox="Gallery-2" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                         
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-3.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-3.jpg" data-lightbox="Gallery-3" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-4.jpg" data-lightbox="Gallery-4" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-5.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-5.jpg" data-lightbox="Gallery-5" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-6.jpg" data-lightbox="Gallery-6" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-7.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-7.jpg" data-lightbox="Gallery-7" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-8.jpg" data-lightbox="Gallery-8" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -840,45 +596,25 @@ body {
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-9.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-9.jpg" data-lightbox="Gallery-9" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                              
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-10.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-10.jpg" data-lightbox="Gallery-10" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-5.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-5.jpg" data-lightbox="Gallery-11" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-1.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Skin Care</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-1.jpg" data-lightbox="Gallery-12" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -892,45 +628,25 @@ body {
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-11.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-11.jpg" data-lightbox="Gallery-13" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-12.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-12.jpg" data-lightbox="Gallery-14" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-2.jpg" data-lightbox="Gallery-15" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stream Bath</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-6.jpg" data-lightbox="Gallery-16" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                              
                                             </div>
                                         </div>
                                     </div>
@@ -944,45 +660,25 @@ body {
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-13.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-13.jpg" data-lightbox="Gallery-17" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-2.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-2.jpg" data-lightbox="Gallery-18" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-3.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-3.jpg" data-lightbox="Gallery-19" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-7.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Stone Therapy</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-7.jpg" data-lightbox="Gallery-20" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                     </div>
@@ -996,67 +692,37 @@ body {
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-4.jpg" data-lightbox="Gallery-21" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-6.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-6.jpg" data-lightbox="Gallery-22" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-8.jpg" data-lightbox="Gallery-23" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-14.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-14.jpg" data-lightbox="Gallery-24" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                               
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-4.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-4.jpg" data-lightbox="Gallery-25" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                         <div class="col-lg-3">
                                             <div class="gallery-img">
                                                 <img class="img-fluid rounded w-100" src="img/gallery-8.jpg" alt="">
-                                                <div class="gallery-overlay p-4">
-                                                    <h4 class="text-secondary">Face Massage</h4>
-                                                </div>
-                                                <div class="search-icon">
-                                                    <a href="img/gallery-8.jpg" data-lightbox="Gallery-26" class="my-auto"><i class="fas fa-search-plus btn-primary btn-primary-outline-0 rounded-circle p-3"></i></a>
-                                                </div>
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -1177,61 +843,125 @@ body {
         <!-- Testimonial End -->
 
 
+        
+
         <!-- Contact Start -->
-        <div class="container-fluid py-5">
-            <div class="container py-5">
-                <div class="row g-4 align-items-center">
-                    <div class="col-12">
-                        <div class="row g-4">
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-map-marker-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Address</h4>
-                                        <p class="mb-0">123 North tower New York, USA</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fas fa-envelope fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Mail Us</h4>
-                                        <p class="mb-0">info@example.com</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="d-inline-flex bg-light w-100 border border-primary p-4 rounded">
-                                    <i class="fa fa-phone-alt fa-2x text-primary me-4"></i>
-                                    <div>
-                                        <h4>Telephone</h4>
-                                        <p class="mb-0">(+012) 3456 7890 123</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+       
+<!-- CONTACT SECTION START -->
+
+<section id="contacto" class="contact-section">
+
+    <div class="contact-container">
+
+        <!-- INFORMACIÓN DE CONTACTO -->
+        <div class="contact-info">
+
+            <div class="contact-label">
+                <span></span>
+                CONTACTO
+            </div>
+
+            <h2>
+                Ponte en <em>Contacto</em>
+            </h2>
+
+            <p class="contact-description">
+                ¿Listo para experimentar el poder sanador del tacto?
+                Comunícate para reservar tu sesión o hacer cualquier
+                pregunta. Estoy aquí para ayudarte en tu camino al bienestar.
+            </p>
+
+            <!-- DATOS -->
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+                    <div class="contact-icon whatsapp-icon">
+                        <i class="fab fa-whatsapp"></i>
                     </div>
-                    <div class="col-12">
-                        <div class="rounded">
-                            <iframe class="rounded-top w-100" 
-                            style="height: 450px; margin-bottom: -6px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387191.33750346623!2d-73.97968099999999!3d40.6974881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1694259649153!5m2!1sen!2sbd" 
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                        <div class=" text-center p-4 rounded-bottom bg-primary">
-                            <h4 class="text-white fw-bold">Follow Us</h4>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-twitter"></i></a>
-                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle me-3"><i class="fab fa-instagram"></i></a>
-                                <a href="#" class="btn btn-light btn-light-outline-0 btn-square rounded-circle"><i class="fab fa-linkedin-in"></i></a>
-                            </div>   
-                        </div>
+
+                    <div>
+                        <span>WHATSAPP</span>
+                        <a href="https://wa.me/50660240438" target="_blank">
+                            +506 6024 0438
+                        </a>
                     </div>
                 </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon location-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+
+                    <div>
+                        <span>UBICACIÓN</span>
+                        <p>Servicio a Domicilio, Guanacaste, Costa Rica</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon time-icon">
+                        <i class="far fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <span>HORARIO</span>
+                        <p>Lun - Sáb: 9:00 AM - 7:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon website-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+
+                    <div>
+                        <span>WEBSITE</span>
+                        <a href="https://massagebyesther.com" target="_blank">
+                            massagebyesther.com
+                        </a>
+                    </div>
+                </div>
+
             </div>
+
+            <!-- BOTÓN WHATSAPP -->
+
+            <a href="https://wa.me/50660240438?text=Hola%20Esther,%20me%20gustaría%20reservar%20una%20sesión%20de%20masaje."
+               target="_blank"
+               class="contact-button">
+
+                <i class="fab fa-whatsapp"></i>
+                RESERVAR POR WHATSAPP
+
+            </a>
+
         </div>
-        <!-- Contact End -->
+
+        <!-- MAPA -->
+
+        <div class="contact-map">
+
+            <iframe
+                src="https://maps.google.com/maps?q=Massage%20by%20Esther%2C%20Tamarindo%2C%20Guanacaste%2C%20Costa%20Rica&t=&z=16&ie=UTF8&iwloc=&output=embed"
+                width="100%"
+                height="100%"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT SECTION END -->
+
+
+  
 
 
 
