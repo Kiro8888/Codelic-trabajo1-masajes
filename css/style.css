@@ -211,10 +211,10 @@
 }
 
 #carouselId .carousel-indicators li.active {
-    background: var(--bs-primary);
-    border-color: var(--bs-primary);
-    border-right: 15px solid var(--bs-primary);
-    border-left: 15px solid var(--bs-primary);
+    background: #254460;
+    border-color: #254460;
+    border-right: 15px solid #254460;
+    border-left: 15px solid #254460;
 }
 /*** Carousel End ***/
 
@@ -673,3 +673,623 @@
     background: var(--bs-dark) !important;
 }
 /*** copyright end ***/
+
+
+
+
+
+
+/* STYLE CONTACTOS */
+
+
+.contact-section {
+    background: #f9f8f4;
+    padding: 100px 7%;
+}
+
+.contact-container {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+}
+
+/* ETIQUETA */
+
+.contact-label {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    color: #b69a70;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+}
+
+.contact-label span {
+    width: 65px;
+    height: 1px;
+    background: #b69a70;
+}
+
+/* TÍTULO */
+
+.contact-info h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 4vw, 49px);
+    line-height: 1.15;
+    color: #626357;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.contact-info h2 em {
+    color: #85866d;
+    font-weight: 500;
+}
+
+/* DESCRIPCIÓN */
+
+.contact-description {
+    font-family: 'DM Sans', sans-serif;
+    color: #73736c;
+    font-size: 16px;
+    line-height: 1.7;
+    max-width: 550px;
+    margin-bottom: 40px;
+}
+
+/* INFORMACIÓN */
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.contact-icon {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    color: #85866d;
+}
+
+.whatsapp-icon {
+    background: #e9eee9;
+}
+
+.location-icon {
+    background: #f0ebdf;
+}
+
+.time-icon {
+    background: #eaeae5;
+}
+
+.website-icon {
+    background: #f2ede3;
+}
+
+.contact-item span {
+    display: block;
+    font-size: 11px;
+    letter-spacing: 1px;
+    color: #77776e;
+    margin-bottom: 4px;
+}
+
+.contact-item p,
+.contact-item a {
+    font-family: 'DM Sans', sans-serif;
+    color: #626357;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0;
+}
+
+.contact-item a:hover {
+    color: #b68e5e;
+}
+
+/* BOTÓN */
+
+.contact-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background: #b68e5e;
+    color: white;
+    padding: 17px 40px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #94734d;
+    color: white;
+    transform: translateY(-3px);
+}
+
+/* MAPA */
+
+.contact-map {
+    width: 100%;
+    height: 585px;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border: 1px solid #e9e5dc;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .contact-map {
+        height: 450px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .contact-section {
+        padding: 65px 22px;
+    }
+
+    .contact-info h2 {
+        font-size: 37px;
+    }
+
+    .contact-description {
+        font-size: 15px;
+    }
+
+    .contact-map {
+        height: 350px;
+    }
+
+    .contact-button {
+        width: 100%;
+        padding: 16px 15px;
+        font-size: 12px;
+    }
+
+}
+
+
+
+/* STYLE SECTION BENEFICIOS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background: #ffffff;
+}
+
+.beneficios {
+    position: relative;
+    background: #f9f8f4;
+    padding: 100px 7%;
+    overflow: hidden;
+}
+
+.contenedor {
+    max-width: 1250px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 80px;
+    position: relative;
+    z-index: 2;
+}
+
+/* TEXTO */
+
+.etiqueta {
+    color: #b69a70;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.etiqueta::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    background: #b69a70;
+}
+
+.contenido h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(34px, 4vw, 49px);
+    line-height: 1.05;
+    font-weight: 600;
+    color: #626357;
+    margin-bottom: 20px;
+}
+
+.contenido h2 span {
+    color: #85866d;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.descripcion {
+    color: #73736c;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 540px;
+    margin-bottom: 55px;
+}
+
+/* LISTA DE BENEFICIOS */
+
+.lista-beneficios {
+    display: flex;
+    flex-direction: column;
+    gap: 42px;
+}
+
+.beneficio {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.icono {
+    min-width: 48px;
+    height: 48px;
+    background: #e9eee9;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 21px;
+}
+
+.beneficio:nth-child(2) .icono {
+    background: #f0ebdf;
+}
+
+.beneficio:nth-child(3) .icono {
+    background: #eaeae5;
+}
+
+.beneficio:nth-child(4) .icono {
+    background: #f2ede3;
+}
+
+.beneficio h3 {
+    font-family: 'Playfair Display', serif;
+    color: #66675d;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.beneficio p {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #74746d;
+}
+
+/* IMAGEN */
+
+.imagen-contenedor {
+    position: relative;
+    padding: 10px;
+}
+
+.imagen-contenedor img {
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 16px;
+    display: block;
+    position: relative;
+    z-index: 2;
+}
+
+/* DETALLE DECORATIVO */
+
+.imagen-contenedor::before {
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 150px;
+    border: 1px solid #e6e5dc;
+    border-radius: 18px;
+    bottom: -15px;
+    left: -15px;
+    z-index: 1;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .imagen-contenedor {
+        max-width: 600px;
+        width: 100%;
+        margin: auto;
+    }
+
+    .imagen-contenedor img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 550px) {
+    .beneficios {
+        padding: 65px 22px;
+    }
+
+    .contenido h2 {
+        font-size: 36px;
+    }
+
+    .descripcion {
+        margin-bottom: 38px;
+    }
+
+    .lista-beneficios {
+        gap: 30px;
+    }
+
+    .imagen-contenedor img {
+        height: 390px;
+    }
+
+    .borde-decorativo {
+        inset: 4px;
+        width: calc(100% - 8px);
+        height: calc(100% - 8px);
+    }
+}
+
+
+
+
+
+/* =================================
+   CAROUSEL - MASSAGE BY ESTHER
+================================= */
+
+/* SUBTÍTULO */
+.carousel-header .carousel-subtitle {
+    color: #55cadb !important;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+/* TÍTULO PRINCIPAL */
+.carousel-header .carousel-title {
+    color: #254460 !important;
+    font-weight: 600;
+    font-family: 'Playfair Display', serif;
+}
+
+/* DESCRIPCIÓN */
+.carousel-header .carousel-description {
+    color: #254460 !important;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+/* BOTÓN SERVICIOS */
+.carousel-header .carousel-button {
+    background-color: #254460;
+    color: #ffffff;
+    border: 2px solid #254460;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+/* EFECTO HOVER */
+.carousel-header .carousel-button:hover {
+    background-color: #55cadb;
+    border-color: #55cadb;
+    color: #254460;
+    transform: translateY(-3px);
+}
+
+/* INDICADORES */
+.carousel-header .carousel-indicators li {
+    background-color: #93ba9d;
+    opacity: 0.6;
+}
+
+.carousel-header .carousel-indicators .active {
+    background-color: #55cadb;
+    opacity: 1;
+}
+
+/* FLECHAS */
+.carousel-header .carousel-control-prev-icon,
+.carousel-header .carousel-control-next-icon {
+    background-color: #254460;
+    border-radius: 50%;
+    padding: 22px;
+    background-size: 50%;
+}
+
+/* TRANSICIÓN DEL BOTÓN */
+.carousel-header .carousel-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(85, 202, 219, 0.3);
+}
+
+/* AJUSTES PARA MÓVILES */
+@media (max-width: 768px) {
+
+    .carousel-header .carousel-title {
+        font-size: 38px;
+    }
+
+    .carousel-header .carousel-description {
+        font-size: 16px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .carousel-header .carousel-subtitle {
+        font-size: 13px;
+    }
+
+}
+/* GALERÍA */
+.gallery-section {
+    background-color: #ffffff;
+    padding: 90px 0;
+}
+
+.gallery-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+.gallery-subtitle {
+    display: inline-block;
+    color: #55cadb;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.gallery-title {
+    color: #254460;
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.gallery-title em {
+    color: #55cadb;
+    font-style: normal;
+}
+
+.gallery-description {
+    color: #777777;
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+/* PESTAÑAS */
+.gallery-tabs {
+    margin-bottom: 40px;
+}
+
+.gallery-tabs .nav {
+    gap: 10px;
+}
+
+.gallery-tabs .nav-link {
+    color: #254460;
+    background-color: #f5f8fa;
+    border: 1px solid #e5edf0;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.gallery-tabs .nav-link:hover {
+    background-color: #55cadb;
+    color: #ffffff;
+    border-color: #55cadb;
+}
+
+.gallery-tabs .nav-link.active {
+    background-color: #254460;
+    color: #ffffff;
+    border-color: #254460;
+}
+
+/* IMÁGENES */
+.gallery-content .gallery-item {
+    overflow: hidden;
+    border-radius: 14px;
+    margin-bottom: 24px;
+    background-color: #f5f8fa;
+}
+
+.gallery-content .gallery-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: 14px;
+    transition: transform 0.5s ease;
+}
+
+.gallery-content .gallery-item:hover img {
+    transform: scale(1.07);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .gallery-section {
+        padding: 65px 0;
+    }
+
+    .gallery-title {
+        font-size: 34px;
+    }
+
+    .gallery-tabs .nav {
+        gap: 8px;
+    }
+
+    .gallery-tabs .nav-link {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .gallery-content .gallery-item img {
+        height: 220px;
+    }
+}
